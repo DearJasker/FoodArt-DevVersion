@@ -1,0 +1,10 @@
+{
+     "item.fa.item_oil_ingot": "Oil Ingot",
+     "block.fa.block_oil_block": "Oil Ore",
+
+     "advancements.fa.root.title": "The trip has begun",
+     "advancements.fa.root.description": "A strange story has begun",
+
+     "itemGroup.itemgroup": "FoodArt | Items",
+     "itemGroup.blockgroup": "FoodArt | Block"
+}

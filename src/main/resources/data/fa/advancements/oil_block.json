@@ -1,0 +1,35 @@
+{
+  "parent": "fa:root",
+  "display": {
+    "icon": {
+      "item": "fa:block_oil_block"
+    },
+    "title": {
+      "translate": "advancements.fa.oil.title"
+    },
+    "description": {
+      "translate": "advancements.fa.oil.description"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "bottle_milk_tea": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "fa:block_oil_block"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "bottle_milk_tea"
+    ]
+  ]
+}

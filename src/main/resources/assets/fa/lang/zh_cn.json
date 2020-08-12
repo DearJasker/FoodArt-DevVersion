@@ -1,0 +1,12 @@
+{
+    "item.fa.item_oil_ingot": "油锭",
+    "block.fa.block_oil_block": "油矿石",
+
+    "advancements.fa.root.title": "旅行开始了",
+    "advancements.fa.root.description": "奇怪的一段故事开始了!",
+    "advancements.fa.oil.title": "挖出来的油",
+    "advancements.fa.oil.description": "去你家后面挖一挖？",
+
+    "itemGroup.itemgroup": "FoodArt | 物品",
+    "itemGroup.blockgroup": "FoodArt | 方块"
+}

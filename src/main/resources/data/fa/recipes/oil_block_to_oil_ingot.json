@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": [
+    {
+      "item": "fa:block_oil_block"
+    }
+  ],
+  "result": "fa:item_oil_ingot",
+  "experience": 0.1,
+  "cookingtime": 200
+}

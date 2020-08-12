@@ -1,0 +1,22 @@
+{
+	"display": {
+		"icon": {
+			"item": "fa:item_oil_ingot"
+		},
+		"title":{
+			"translate": "advancements.fa.root.title"
+		},
+		"description": {
+			"translate": "advancements.fa.root.description"
+		},
+		"background": "minecraft:textures/block/stone_bricks.png"
+	},
+	"criteria": {
+		"root": {
+			"trigger": "minecraft:tick"
+		}
+	},
+	"rewards": {
+		"experience": 7
+	}
+}

@@ -1,10 +1,10 @@
 package xyz.robblog.fa.item;
 
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
+import xyz.robblog.fa.register.GroupRegistry;
 
 public class OilIngot extends Item {
     public OilIngot() {
-        super(new Properties().group(ItemGroup.MATERIALS));
+        super(new Properties().group(GroupRegistry.itemModGroup));
     }
 }
