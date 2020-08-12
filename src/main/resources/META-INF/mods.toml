@@ -1,0 +1,77 @@
+# This is an example mods.toml file. It contains the data relating to the loading mods.
+# There are several mandatory fields (#mandatory), and many more that are optional (#optional).
+# The overall format is standard TOML format, v0.5.0.
+# Note that there are a couple of TOML lists in this file.
+# Find more information on toml format here:  https://github.com/toml-lang/toml
+# The name of the mod loader type to load - for regular FML @Mod mods it should be javafml
+modLoader="javafml" #mandatory
+# A version range to match for said mod loader - for regular FML @Mod it will be the forge version
+loaderVersion="[32,)" #mandatory This is typically bumped every Minecraft version by Forge. See our download page for lists of versions.
+# The license for you mod. This is mandatory metadata and allows for easier comprehension of your redistributive properties.
+# Review your options at https://choosealicense.com/. All rights reserved is the default copyright stance, and is thus the default here.
+license="All rights reserved"
+# A URL to refer people to when problems occur with this mod
+issueTrackerURL="http://my.issue.tracker/" #optional
+# A list of mods - how many allowed here is determined by the individual mod loader
+# A list of mods - how many allowed here is determined by the individual mod loader
+[[mods]] #mandatory
+# The modid of the mod
+modId="fa" #mandatory
+# The version number of the mod - there's a few well known ${} variables useable here or just hardcode it
+version="0.0.1" #mandatory
+# A display name for the mod
+displayName="FoodArt" #mandatory
+# A URL to query for updates for this mod. See the JSON update specification <here>
+updateJSONURL="http://robblog.xyz/" #optional
+# A URL for the "homepage" for this mod, displayed in the mod UI
+displayURL="http://robblog.xyz/" #optional
+# A file name (in the root of the mod JAR) containing a logo for display
+logoFile="fa.png" #optional
+# A text field displayed in the mod UI
+credits="Rob_LYK-Code wuxiaotong-Picture" #optional
+# A text field displayed in the mod UI
+authors="Rob_LYK" #optional
+# The description text for the mod (multi line!) (#mandatory)
+description='''
+大家好，这里是FoodArt，食物艺术，在这里，你会将食物变成一种艺术，在Minecraft里合成食物、建筑餐厅并获得米其林评级，加油吧，快去创造属于你自己的食物世界（米其林评级当然不是因为我吃不起米其林）。
+
+Mod作者：
+  Rob_LYK 代码
+  wuxiaotong 贴图
+Mod参考：
+   教程：
+     Obsidian 1.16 —— Forge从入门到放弃 https://modtutor.xuogroup.top/ - 部分内容参考
+     Minecraft Forge Mod Dev tutorial https://neutrino.v2mcdev.com/ - 大量代码学习
+     Harbinger - 面向中文社区的 1.12.2 Forge Mod 开发指南 https://harbinger.covertdragon.team/ - 数据包参考（这里说一句题外话：其实我觉得1.12直接把资源包和数据包合在一起了挺好啊）
+   Mod源代码：
+     After the Drizzle 细雨田园 https://github.com/lemon-slice-studio/After-the-Drizzle - GUI与节气系统代码参考
+     Mine and Slash 挖矿与砍杀 https://github.com/RobertSkalko/Mine-and-Slash/tree/1.15 - GUI代码参考
+     TofuCraftReload 豆腐工艺重置版 https://github.com/0999312/TofuCraftReload - 食品设计参考
+     Terrestria 更多生物群系 https://github.com/TerraformersMC/Terrestria - 生物群系设计与代码参考
+     Create 机械动力 https://github.com/Creators-of-Create/Create - 机器与方块实体代码参考
+   Mod本体：
+     EightCuisine 八大菜系 https://www.mcbbs.net/thread-1082922-1-5.html - 食品元素参考
+     FoodCraftReloaded 食物工艺重置版 https://www.mcbbs.net/thread-994837-1-1.html - 食品元素参考
+
+注意：所有Mod均没有复制源代码，故不涉及“抄袭”与“版权”问题
+另：作为一个Forge忠实粉丝，只要Forge没有停止开发，这个Mod都会是Forge的，暂时没有Fabric计划（万一哪天打脸了就把这句话删掉[滑稽]）
+'''
+# A dependency - use the . to indicate dependency for a specific modid. Dependencies are optional.
+[[dependencies.examplemod]] #optional
+    # the modid of the dependency
+    modId="forge" #mandatory
+    # Does this dependency have to exist - if not, ordering below must be specified
+    mandatory=true #mandatory
+    # The version range of the dependency
+    versionRange="[32,)" #mandatory
+    # An ordering relationship for the dependency - BEFORE or AFTER required if the relationship is not mandatory
+    ordering="NONE"
+    # Side this dependency is applied on - BOTH, CLIENT or SERVER
+    side="BOTH"
+# Here's another dependency
+[[dependencies.examplemod]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.16.1]"
+    ordering="NONE"
+    side="BOTH"
